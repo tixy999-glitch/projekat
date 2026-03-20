@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo2.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/styleCheckout.css" type="text/css" rel="stylesheet">
+    <title>Checkout Form</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div
+            class="fluid-container row justify-content-center header  navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand  p-3   rounded sticky-top z-index-1">
+            <div
+                class="navbar-brand col-lg-1 col-md-5 col-5 justify-content-md-end order-lg-1  order-3 d-flex justify-content-center  ">
+
+
+
+
+                <a class="navbar-brand" href="products.html">
+                    <img src="images/logo2.ico" alt="Logo" height="100" class="d-inline-block align-text-center mx-2 ">
+
+                </a>
+
+            </div>
+
+            <div class="container  col-lg-5 flex-shrink-2  rounded-5 order-2  search d-none d-lg-flex  ">
+                <form class=" d-lg-flex order-lg-2 order-md-2 " role="search">
+                    <input class="form-control   focus-ring focus-ring-light  d-lg-flex d-lg-flex d-none input-search "
+                        type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-primary   btn-sm  rounded-circle " type="submit"><span
+                            class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </form>
+            </div>
+            <div class="container col-lg-4 col-md-6 col-sm-4 col-5 order-4 justify-content-center  align-self-center ">
+                <ul class="nav d-lg-flex  ">
+                    <li class="nav-item  ">
+                        <div class="material-symbols-outlined log ">
+                            <a href="#" class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log">favorite</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="material-symbols-outlined log">
+                            <a href="checkout-page.html"
+                                class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log">shopping_cart</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="material-symbols-outlined log">
+                            <a href="login.html"
+                                class=" fs-3 text-decoration-none text-dark m-lg-3  log">account_circle</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="coutainer col-1 log">
+
+                <a href="#"
+                    class=" material-symbols-outlined text-decoration-none text-dark d-lg-none d-md-none d-sm-flex order-sm-1 "
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    menu
+                </a>
+
+            </div>
+
+            <div class="coutainer col-1 log ">
+                <a href="#"
+                    class="material-symbols-outlined text-decoration-none text-dark d-lg-none  d-flex log  order-sm-2">
+                    search
+                </a>
+
+            </div>
+        </div>
+        <nav class="navbar ">
+            <div class=" navigation container-fluid d-lg-flex d-md-flex d-sm-flex d-none justify-content-center  ">
+                <div class="navig  ">
+                    <a href="products.html" class="box2 ">PRODUCTS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">BESTSELLER</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">HOME</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">ALL SHOPS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">SALE!</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="m-5 p-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+        </ol>
+    </div>
+    <main>
+        <h1 class="text-center display-1  mb-5 pb-3 "><strong>Checkout</strong> </h1>
+        <div class="fluid-container">
+            <div class="row gap-5">
+                <div class="col-lg-6 col-md-12 order-1  ">
+                    <div class=" container w-75     ">
+
+                        <p class="h1 mb-5">Review your Cart</p>
+                        <div class="rounded w-100 p-3 pb-0 shadow p-3 mb-5 bg-body-tertiary rounded">
+                            <div class="div border-bottom border-primary">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/334d6c0c-b5fc-4309-bdf3-e64000a0eb38/NIKE+VOMERO+18.png"
+                                            class="img-fluid rounded-start" alt="Nike Vomero 18">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <h5 class="card-title  col-lg-7 ">Nike Vomero 18</h5>
+                                                <p class="card-text   col-lg-5 "><strong>16.499RSD</strong></p>
+                                            </div>
+                                            <small class="card-title text-muted d-block">Size:38</small>
+                                            <div class="btn-group btn-group-sm mt-3" role="group"
+                                                aria-label="Small button group">
+                                                <button type="button" class="btn btn-outline-primary">+</button>
+                                                <div class="border border-primary px-3">1</div>
+                                                <button type="button" class="btn btn-outline-primary">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div border-bottom  border-primary">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/558586f6-009d-486d-aa33-42cbb814fafe/sportswear-phoenix-fleece-womens-oversized-crew-neck-sweatshirt-Gk8Sra3v.png"
+                                            class="img-fluid rounded-start" alt="Nike Sportswear Phoenix Fleece">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <h5 class="card-title  col-lg-7 ">Nike Sportswear Phoenix Fleece</h5>
+                                                <p class="card-text   col-lg-5 "><strong>12.400RSD</strong></p>
+                                            </div>
+                                            <small class="card-title text-muted d-block">Size:S</small>
+                                            <div class="btn-group btn-group-sm mt-3" role="group"
+                                                aria-label="Small button group">
+                                                <button type="button" class="btn btn-outline-primary">+</button>
+                                                <div class="border border-primary px-3">2</div>
+                                                <button type="button" class="btn btn-outline-primary">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div border-bottom border-primary">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/e8e5cf3c-f22c-4cd0-bf8f-1da51bf2f94e/everyday-plus-cushioned-training-ankle-socks-3-pairs-7AnJRwu0.png"
+                                            class="img-fluid rounded-start" alt="Nike Everyday Plus Cushioned">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <h5 class="card-title  col-lg-7 ">Nike Everyday Plus Cushioned</h5>
+                                                <p class="card-text   col-lg-5 "><strong>2.400RSD</strong></p>
+                                            </div>
+                                            <small class="card-title text-muted d-block">Size:35-38</small>
+                                            <div class="btn-group btn-group-sm mt-3" role="group"
+                                                aria-label="Small button group">
+                                                <button type="button" class="btn btn-outline-primary">+</button>
+                                                <div class="border border-primary px-3">1</div>
+                                                <button type="button" class="btn btn-outline-primary">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div ">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/88e2634a-6639-4681-92d5-eb7a07b8890a/MATTE+LEGGING+26+INCH.png"
+                                            class="img-fluid rounded-start" alt="Nike SKIMS Matte">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <h5 class="card-title  col-lg-7 ">Nike SKIMS Matte</h5>
+                                                <p class="card-text   col-lg-5 "><strong>8.700RSD</strong></p>
+                                            </div>
+                                            <small class="card-title text-muted d-block">Size:S</small>
+                                            <div class="btn-group btn-group-sm mt-3" role="group"
+                                                aria-label="Small button group">
+                                                <button type="button" class="btn btn-outline-primary">+</button>
+                                                <div class="border border-primary px-3">1</div>
+                                                <button type="button" class="btn btn-outline-primary">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-10 col-sm-10 offset-md-1 order-2 mt-5 pt-5  ">
+                    <div class=" container w-75 shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="container  ">
+                            <h5 class="fw-bold border-top border-primary mb-3">Order Summary</h5>
+                            <div class="row ">
+                                <div class="col-6 mt-3">
+                                    <p>Subtotal</p>
+                                </div>
+                                <div class="col-6 text-end mt-3">
+                                    <p class="fw-bold" id="price">39.999RSD</p>
+                                </div>
+                                <div class="col-6 my-4">
+                                    <p>Discount</p>
+                                </div>
+                                <div class="col-6 text-end my-4">
+                                    <p id="cupon">0</p>
+                                </div>
+                            </div>
+                            <div class="container border-top border-primary">
+                                <div class="row border-top border-primary p-2">
+                                    <div class="col-6">
+                                        <p class="fw-bold">Total</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="fw-bold" id="total">39.999RSD</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <form class="row g-3 mt-2">
+                                <div class="col-7 ">
+
+                                    <input type="text" class="form-control w-100" id="promoInput" name="cupon"
+                                        placeholder="Add promo code">
+                                </div>
+                                <div class="col-5">
+                                    <button type="button" onclick="validateAndNotify()"  id="applyButton"
+                                        class="btn btn-primary mb-3 w-100 ">Apply</button>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary mt-4 mb-5 w-100">Go To Checkout</button>
+                        </div>
+
+                        <p class="mt-5">Prices and costs are not displayed until you complete our purchase.</p>
+                        <p class="mt-5">You have 30 days to change your mind.Read more about <a href="#"
+                                class="text-dark">Delivery and Return.</a></p>
+                        <p>Need help?Please contact <a href="#" class="text-dark">Customer Support.</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="fluid-container mt-5 sticky-bottom   ">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-5  col-sm-12 col-12">
+                    <h3>SHOP</h3>
+                    <p>Shose</p>
+                    <p>Jackets</p>
+                    <p>Trouser</p>
+                    <p>Begs</p>
+                    <p>Gift Cards</p>
+                    <p>Sales & Offers</p>
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>INFORMATION</h3>
+                    <p>About</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Delivery and Return</p>
+
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>COSTUMER SUPPORT</h3>
+                    <p>Contact</p>
+                    <p>Help</p>
+                    <p>FAQ</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/checkOut.js"></script>
+</body>
+
+</html>

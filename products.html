@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo2.ico">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/styleProducts.css" type="text/css" rel="stylesheet">
+    <title>Urban Steps</title>
+</head>
+
+<body>
+    <header>
+        <div
+            class="fluid-container row justify-content-center header  navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand  p-3   rounded sticky-top z-index-1">
+            <div
+                class="navbar-brand col-lg-1 col-md-5 col-5 justify-content-md-end order-lg-1  order-3 d-flex justify-content-center  ">
+
+
+
+
+                <a class="navbar-brand" href="products.html">
+                    <img src="images/logo2.ico" alt="Logo" width-lg="50" width-md="15" height="100"
+                        class="d-inline-block align-text-center mx-2 ">
+
+                </a>
+
+            </div>
+
+            <div class="container  col-lg-5 flex-shrink-2  rounded-5 order-2  search d-none d-lg-flex  ">
+                <form class=" d-lg-flex order-lg-2 order-md-2 " role="search">
+                    <input class="form-control   focus-ring focus-ring-light  d-lg-flex d-lg-flex d-none input-search "
+                        type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"  />
+                    <button class="btn btn-primary   btn-sm  rounded-circle " type="submit"><span
+                            class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </form>
+            </div>
+            <div class="container col-lg-4 col-md-6 col-sm-4 col-5 order-4 justify-content-center  align-self-center ">
+                <ul class="nav d-lg-flex  ">
+                    <li class="nav-item  ">
+                        <div class="material-symbols-outlined log ">
+                            <a href="#" class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log">favorite</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="material-symbols-outlined log">
+                            <a href="#" class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log" onclick="openCart()">shopping_cart</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="material-symbols-outlined log">
+                            <a href="login.html"
+                                class=" fs-3 text-decoration-none text-dark m-lg-3  log">account_circle</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="coutainer col-1 log">
+
+                <a href="#"
+                    class=" material-symbols-outlined text-decoration-none text-dark d-lg-none d-md-none d-sm-flex order-sm-1 "
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    menu
+                </a>
+
+            </div>
+
+            <div class="coutainer col-1 log ">
+                <a href="#"
+                    class="material-symbols-outlined text-decoration-none text-dark d-lg-none  d-flex log  order-sm-2">
+                    search
+                </a>
+
+            </div>
+        </div>
+        <nav class="navbar ">
+            <div class=" navigation container-fluid d-lg-flex d-md-flex d-sm-flex d-none justify-content-center  ">
+                <div class="navig  ">
+                    <a href="products.html" class="box2 ">PRODUCTS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">BESTSELLER</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">HOME</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">ALL SHOPS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">SALE!</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="m-5 p-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            <li class="breadcrumb-item active" aria-current="page">View All</li>
+        </ol>
+    </div>
+    <main>
+        <div class="fluid-container row">
+            <h1 class="text-center mb-5">View All Products</h1>
+
+            <div class="container col-lg-4 col-md-2 d-none d-lg-block filters w-25 m-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+                <h3 class="my-5">Filters</h3>
+                <div class="accordion " id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item border-0 ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Price
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <label for="range4" class="form-label">Example range</label>
+                                <input type="range" class="form-range" min="37.99" max="249.99" value="50" id="range4">
+                                <output for="range4" id="rangeValue" aria-hidden="true"></output>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Gender
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">
+                                        Woman
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                    <label class="form-check-label" for="checkChecked">
+                                        Man
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                    <label class="form-check-label" for="checkDefault2">
+                                        Unisex
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault3">
+                                    <label class="form-check-label" for="checkDefault3">
+                                        Kids
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Categories
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Shoes">
+                                    <label class="form-check-label" for="Shoes">
+                                        All Shoes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Lifestyle">
+                                    <label class="form-check-label" for="Lifestyle">
+                                        Lifestyle
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Running">
+                                    <label class="form-check-label" for="Running">
+                                        Running
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Football">
+                                    <label class="form-check-label" for="Football">
+                                        Football
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Basketball">
+                                    <label class="form-check-label" for="Basketball">
+                                        Basketball
+                                    </label>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Collection
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Spring">
+                                    <label class="form-check-label" for="Spring">
+                                        Spring & Summer
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Autumn">
+                                    <label class="form-check-label" for="Autumn">
+                                        Autumn & Winter
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseFive">
+                                Colors
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Blue">
+                                    <label class="form-check-label" for="Blue">
+                                        Blue
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Red">
+                                    <label class="form-check-label" for="Red">
+                                        Red
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary w-75 m-5">
+                    Apply Filters
+                </button>
+            </div>
+            <div class="container col-lg-7  articals">
+                <div class="flex-wrap d-flex">
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/2aeed54e-eb7c-498d-995b-7d212a933c7b/W+NSW+TF+DWN+SWSH+PFR.png"
+                            class="card-img-top rounded" alt="Nike Sportswear Swoosh">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6 h-25">Nike Sportswear Swoosh</h5>
+                            <p class="card-text " >$ 249,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('249.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7b928557-b7ff-4b51-b0da-d96c9a4de4e5/W+NIKE+SHOX+Z+SE.png"
+                            class="card-img-top rounded" alt="Nike Shox Z SE">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6 h-25">Nike Shox Z SE</h5>
+                            <p class="card-text " >$ 139,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('139.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e2afb2b7-bd2d-4141-b892-4dd292b8b082/U+J+APEX+BUCKET+FLAMINGO+AOP.png"
+                            class="card-img-top rounded" alt="Jordan Apex">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6 h-25">Jordan Apex</h5>
+                            <p class="card-text">$ 16,49</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('16.49')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee690057-cb97-4188-9431-5a18168e65aa/W+J+BRK+ESS+LS+BDYST.png"
+                            class="card-img-top rounded" alt="Jordan Brooklyn Essentials">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6 h-25">Jordan Brooklyn Essentials</h5>
+                            <p class="card-text">$ 54,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('54.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/odhlk8ksqmstmdcjjyn0/W+AF1+SHADOW.png"
+                            class="card-img-top rounded" alt="Nike Air Force 1 Shadow">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Air Force 1 Shadow</h5>
+                            <p class="card-text">$ 64,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('64.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/cfe530ea-a07d-46ac-a5a6-1df56d1ae7e5/W+NSW+PHNX+FLC+OOS+CREW.png"
+                            class="card-img-top rounded" alt="Nike Sportswear Phoenix">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Sportswear Phoenix</h5>
+                            <p class="card-text">$ 59,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('59.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b1e41d46-227e-499b-8adc-2afbaa5d4b3f/NK+ICON+BLAZER+WRISTLET+LARGE.png"
+                            class="card-img-top rounded" alt="Nike Icon Blazer">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Icon Blazer</h5>
+                            <p class="card-text">$ 19,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('19.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/25478073-23eb-41cf-a7b8-a92e1f86943e/M+NK+CLUB+BB+JOGGER.png"
+                            class="card-img-top rounded" alt="Nike Club">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Club</h5>
+                            <p class="card-text">$ 32,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('32.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/64240cd0-63f1-4074-81c4-22f885004101/W+NIKE+V5+RNR.png"
+                            class="card-img-top rounded" alt="Nike V5 RNR">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike V5 RNR</h5>
+                            <p class="card-text ">$ 59,49</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('59.49')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/db9eaba0-7274-408d-8c40-1ca7203e3adc/NK+ELMNTL+BKPK+-+HBR.png"
+                            class="card-img-top rounded" alt="Nike">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike</h5>
+                            <p class="card-text">$ 37,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('37.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/490bbcfa-9a33-40c6-b6f5-18f97c1442a5/M+NK+RPL+UNLIMITED+JKT.png"
+                            class="card-img-top rounded" alt="Nike Unlimited">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Unlimited</h5>
+                            <p class="card-text">$ 89,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('89.99')">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card prod shadow p-3 m-3 bg-body-tertiary rounded border-0">
+                        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/632d7634-1ebe-48e9-8b24-43d925b4bbde/AIR+MAX+DN+NRG.png"
+                            class="card-img-top rounded" alt="Nike Air Max Dn">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-6 h-25">Nike Air Max Dn</h5>
+                            <p class="card-text">$ 89,99</p>
+                            <button class="btn btn-primary w-100 " onclick="dodajNaIznos('89.99')">Add to cart</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-center m-5">
+                    <li class="page-item ">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        </div>
+    </main>
+    <div class="fluid-container newsletter row p-3 bg-secondary mt-5">
+        <div class="offers col-12 col-gl-5 col-md-5">
+            <h1 class="text-center m-5 text-left fs-1">STAY UP TO DATE ABOUT OUR BEST OFFERS!</h1>
+        </div>
+        <div class="input-email col-12 p-2 col-lg-6 col-md-6">
+
+            <input type="text" class="text-center rounded-4 mt-5 w-100 p-3" id="email" name="email"
+                placeholder="Enter your email address..." autocomplete="off">
+
+            <div id="email-button" type="button" class="btn btn-dark rounded- w-100 p-4 mt-3">Subscribe
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="fluid-container mt-5 sticky-bottom   ">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-5  col-sm-12 col-12">
+                    <h3>SHOP</h3>
+                    <p>Shose</p>
+                    <p>Jackets</p>
+                    <p>Trouser</p>
+                    <p>Begs</p>
+                    <p>Gift Cards</p>
+                    <p>Sales & Offers</p>
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>INFORMATION</h3>
+                    <p>About</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Delivery and Return</p>
+
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>COSTUMER SUPPORT</h3>
+                    <p>Contact</p>
+                    <p>Help</p>
+                    <p>FAQ</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>

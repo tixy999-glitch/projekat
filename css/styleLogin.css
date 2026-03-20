@@ -1,0 +1,60 @@
+.shoes {
+    background-image: url("../images/image.jpg");
+    background-size: cover;
+    background-position: 200%;
+}
+
+.gradient {
+    background: #D9D8D4;
+    background: linear-gradient(178deg, rgba(217, 216, 212, 1) 0%, rgba(217, 217, 215, 1) 100%);
+    height: 650px;
+}
+
+.box {
+    width: 60%;
+    height: 650px;
+    background-color: white;
+    border-radius: 100% 100% 100% 100% / 100% 10% 10% 100%;
+    box-shadow: 10px 10px 10px 10px rgba(36, 35, 35, 0.315);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 150px;
+}
+
+@media screen and (max-width:576px) {
+    .box {
+        width: 100%;
+
+    }
+}
+
+.form {
+
+    height: 550px;
+    width: 40%;
+    margin-right: 20%;
+
+}
+
+@media screen and (max-width:1024px) {
+    .form {
+        width: 70%;
+        margin-right: 10%;
+    }
+}
+
+.form1 input {
+    height: 50px;
+    background-color: #F3F2F2 !important;
+    box-shadow: 1px 1px 5px 1px rgba(36, 35, 35, 0.315) inset;
+}
+
+/*pomera  footer 720px od headera, jer se na ovoj stranici na manjim ekranima izmedju nalazi samo apsolutni div*/
+@media screen and (max-width:576px) {
+    .footer {
+        margin-top: 720px;
+
+    }
+}
+

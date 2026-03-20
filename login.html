@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo2.ico">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/styleLogin.css" type="text/css" rel="stylesheet">
+    <title>Urban Steps</title>
+</head>
+
+<body>
+    <header>
+        <div
+            class="fluid-container row justify-content-center header  navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand  p-3   rounded sticky-top z-index-1">
+            <div
+                class="navbar-brand col-lg-1 col-md-5 col-5 justify-content-md-end order-lg-1  order-3 d-flex justify-content-center  ">
+
+
+
+
+                <a class="navbar-brand" href="products.html">
+                    <img src="images/logo2.ico" alt="Logo" width-lg="50" width-md="15" height="100"
+                        class="d-inline-block align-text-center mx-2 ">
+
+                </a>
+
+            </div>
+
+            <div class="container  col-lg-5 flex-shrink-2  rounded-5 order-2  search d-none d-lg-flex  ">
+                <form class=" d-lg-flex order-lg-2 order-md-2 " role="search">
+                    <input class="form-control   focus-ring focus-ring-light  d-lg-flex d-lg-flex d-none input-search "
+                        type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-primary   btn-sm  rounded-circle " type="submit"><span
+                            class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </form>
+            </div>
+            <div class="container col-lg-4 col-md-6 col-sm-4 col-5 order-4 justify-content-center  align-self-center ">
+                <ul class="nav d-lg-flex  ">
+                    <li class="nav-item  ">
+                        <div class="material-symbols-outlined log ">
+                            <a href="#" class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log">favorite</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="material-symbols-outlined log">
+                            <a href="checkout-page.html"
+                                class="fs-3 text-decoration-none text-dark m-lg-3 m-md-3 log">shopping_cart</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="material-symbols-outlined log">
+                            <a href="login.html"
+                                class=" fs-3 text-decoration-none text-dark m-lg-3  log">account_circle</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="coutainer col-1 log">
+
+                <a href="#"
+                    class=" material-symbols-outlined text-decoration-none text-dark d-lg-none d-md-none d-sm-flex order-sm-1 "
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    menu
+                </a>
+
+            </div>
+
+            <div class="coutainer col-1 log ">
+                <a href="#"
+                    class="material-symbols-outlined text-decoration-none text-dark d-lg-none  d-flex log  order-sm-2">
+                    search
+                </a>
+
+            </div>
+        </div>
+        <nav class="navbar ">
+            <div class=" navigation container-fluid d-lg-flex d-md-flex d-sm-flex d-none justify-content-center  ">
+                <div class="navig  ">
+                    <a href="products.html" class="box2 ">PRODUCTS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">BESTSELLER</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">HOME</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">ALL SHOPS</a>
+                </div>
+                <div class="navig ">
+                    <a href="#" class="box2">SALE!</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="fluid-container d-none d-lg-flex d-md-flex- d-sm-flex  ">
+            <div class="container p-2 w-100 bg-image  shoes ">
+
+            </div>
+            <div class="container p-2 w-100 gradient ">
+
+            </div>
+
+        </div>
+        <div class="box  ">
+
+            <div class="container form mt-5 w-sm-100 w-md-50 ">
+                <p class="text-center login text-primary fs-1  ">LOGIN</p>
+                <form>
+                    <div class=" mt-5 mb-3 form1 form-floating ">
+
+                        <input type="text" class="form-control focus-ring focus-ring-light rounded-4" id="email"
+                         name="email"   placeholder="Username"  autocomplete="off"required>
+                        <label for="email" id="labelUsername">Username</label>
+                        <div class="form-text">We'll never share your email with anyone else.</div>
+
+                    </div>
+                    <div class="mb-4 form1  form-floating">
+
+                        <input type="password" class="form-control focus-ring focus-ring-light rounded-4"
+                            id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+                        <label for="password" id="labelPassword">Password</label>
+
+                    </div>
+                    <div class="mb-3 form-check check">
+                        <input type="checkbox" class="form-check-input focus-ring focus-ring-light " id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        <a href="#" class="float-end">Forgat password?</a>
+                    </div>
+
+                    <button onclick="login(email,password)" type="button" id="loginBtn"
+                        class="btn btn-primary btn-login w-100 fs-3 mt-3 rounded-4 p-2">Login</button>
+                    <a href="#" class="text-reset create text-muted float-end"> Or Create New Account</a>
+                </form>
+
+            </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="fluid-container mt-5 sticky-bottom   ">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-5  col-sm-12 col-12">
+                    <h3>SHOP</h3>
+                    <p>Shose</p>
+                    <p>Jackets</p>
+                    <p>Trouser</p>
+                    <p>Begs</p>
+                    <p>Gift Cards</p>
+                    <p>Sales & Offers</p>
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>INFORMATION</h3>
+                    <p>About</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Delivery and Return</p>
+
+                </div>
+                <div class="col-lg-4 col-md-5  col-sm-12">
+                    <h3>COSTUMER SUPPORT</h3>
+                    <p>Contact</p>
+                    <p>Help</p>
+                    <p>FAQ</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
