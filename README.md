@@ -1,12 +1,13 @@
+</>markdown
 ## E-commerce project
 
-This is e-commerce app for sport shoes and sport clothes.It's developed for selling products online.
+This is an e-commerce app for sports shoes and sports clothes. It's developed for selling products online.
 
 ## Features
 ```
 -reviewing products 
 -browsing and filter products 
--login on profil
+-login on profile
 -ordering and buying online
 
 ```
